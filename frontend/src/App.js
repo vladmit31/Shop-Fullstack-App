@@ -25,11 +25,6 @@ function App() {
 		<>
 			<NavBar loggedIn={isLoggedIn()} username={jwt_decode(token).email} />
 			<Switch>
-				{!isLoggedIn() && (
-					<Route path="/login">
-						<Login setToken={setToken} />
-					</Route>
-				)}
 				<Route path="/">
 					<MyInfo />
 				</Route>
