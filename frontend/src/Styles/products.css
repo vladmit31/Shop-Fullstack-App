@@ -1,0 +1,14 @@
+#products-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.product {
+	display: flex;
+	padding: 3em;
+}
+
+.product > img {
+	width: 5em;
+	margin-right: 3em;
+}
